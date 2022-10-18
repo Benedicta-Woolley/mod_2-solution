@@ -1,0 +1,141 @@
+h1 {
+  text-align: center;
+  font-family: americantypewriter;
+  color: rgb(80, 79, 79);
+}
+
+.chicken {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+}
+.chicken h3 {
+  border: 1px solid black;
+  text-align: center;
+  width: 25%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 75%;
+  background-color: crimson;
+}
+
+.beef {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+.beef h3 {
+  border: 1px solid black;
+  text-align: center;
+  width: 25%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 75%;
+  background-color: rgb(172, 111, 207);
+}
+
+.sushi {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+.sushi h3 {
+  border: 1px solid black;
+  text-align: center;
+  width: 25%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 75%;
+  background-color: rgb(240, 241, 126);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: rgb(75, 112, 75);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.text {
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.text1 {
+  width: 30%;
+  background: lightgray;
+}
+
+.text2 {
+  width: 30%;
+  background: lightpink;
+}
+
+.text3 {
+  width: 30%;
+  background: lightskyblue;
+}
+/*bigger screen sizes*/
+@media (min-width: 992px) {
+  .text {
+    margin: 10px;
+  }
+  .text1 {
+    width: 30%;
+  }
+
+  .text2 {
+    width: 30%;
+  }
+
+  .text3 {
+    width: 30%;
+  }
+}
+
+/*Tablet screen sizes*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    justify-content: space-evenly;
+  }
+  .text {
+    margin: 10px;
+  }
+  .text1 {
+    width: 36%;
+  }
+
+  .text2 {
+    width: 36%;
+  }
+
+  .text3 {
+    width: 82%;
+  }
+}
+
+/*mobile phone and smaller screen sizes*/
+@media (max-width: 767px) {
+  h1 {
+    top: 0;
+    position: sticky;
+    background-color: whitesmoke;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+  .container {
+    justify-content: space-evenly;
+  }
+  .text {
+    margin: 10px;
+  }
+  .text1 {
+    width: 80%;
+  }
